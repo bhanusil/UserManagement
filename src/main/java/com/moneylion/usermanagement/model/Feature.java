@@ -60,7 +60,7 @@ public class Feature extends TemporalInfo implements Serializable {
 
     @Override
     public String toString() {
-        return "TemporalInfo{" +
+        return "Feature{" +
                 "id=" + id +
                 ", featureName=" + featureName +
                 ", enable=" + enable +

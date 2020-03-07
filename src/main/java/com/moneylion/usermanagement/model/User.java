@@ -44,7 +44,7 @@ public class User extends TemporalInfo implements Serializable {
 
     @Override
     public String toString() {
-        return "TemporalInfo{" +
+        return "User{" +
                 "id=" + id +
                 ", name=" + name +
                 ", email=" + email +
