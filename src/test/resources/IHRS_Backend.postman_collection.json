@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "562968fe-18aa-4ae0-9857-150af181e4a9",
+		"name": "MoneyLion",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add Access",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"featureName\": \"feature01\",\r\n\t\"email\": \"01@gmail.com\",\r\n\t\"enable\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/feature",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"feature"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check Access",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/feature?email=01@gmail.com&featureName=feature02",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"feature"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "01@gmail.com"
+						},
+						{
+							"key": "featureName",
+							"value": "feature02"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
