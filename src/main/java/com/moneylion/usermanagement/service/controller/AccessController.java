@@ -91,7 +91,7 @@ public class AccessController {
 
         }catch (Exception e){
             logger.error("[addFeature: General Exception]={}", e);
-            response = ResponseEntity.ok().body(null);
+            response = ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
         }
 
         return response;
