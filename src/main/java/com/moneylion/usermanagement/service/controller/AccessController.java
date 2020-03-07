@@ -41,13 +41,10 @@ public class AccessController {
                 if(featureDB!=null){
                     response.setCanAccess(featureDB.getEnable());
 
-                }else{
-                    response.setCanAccess(Boolean.FALSE);
                 }
 
             }else{
                 logger.error("[getFeature: Invalid User Email: email]={} ", email);
-                response.setCanAccess(Boolean.FALSE);
             }
 
         }catch (Exception e){
