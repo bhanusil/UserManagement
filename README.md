@@ -30,3 +30,10 @@ Change the JDBC URL as below
 jdbc:h2:mem:testdb
 ```
 Username should be sa and leave password as empty. Then click the connect button. Then it will connect to the database.
+
+### Testing the project
+Please export postman collection from the project. You can find it from below project path.
+```
+src/test/resources/postman_collection.json
+```
+Note : If your Tomcat Server is running different port use that port instead 8080 as URL. 
